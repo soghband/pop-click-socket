@@ -1,0 +1,50 @@
+.fullScreen {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: gray;
+  background-size: cover;
+  overflow: hidden;
+  .backgroundUnClick {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .backgroundClick {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .textPanel {
+    position: absolute;
+    padding-top: 10vh;
+    width: 100vw;
+    text-align: center;
+    .title {
+      display: block;
+      text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+      color: #83c7ff;
+      -moz-user-select:none;
+      -webkit-user-select:none;
+      font-size: 70px;
+    }
+    .count {
+      display: block;
+      text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+      color: white;
+      font-size: 50px;
+      -moz-user-select:none;
+      -webkit-user-select:none;
+    }
+  }
+  .inactive {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+}

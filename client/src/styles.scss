@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'funtimeregular';
+  src: url('assets/funtime-webfont.woff2') format('woff2'),
+  url('assets/funtime-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+body {
+  font-family: funtimeregular;
+  padding: 0;
+  margin: 0;
+}
+
+.relative {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.topTen {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}

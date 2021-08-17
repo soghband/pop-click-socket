@@ -1,0 +1,10 @@
+<div class="fullScreen" (mousedown)="countClick()" (mouseup)="mouseUpEvent()">
+  <div class="backgroundUnClick {{mouseDown ? 'inactive' : 'active'}}" [style]="'background-image: url('+mediaState[currentState].unClickImage+')'"></div>
+  <div class="backgroundClick {{mouseDown ? 'active' : 'inactive'}}" [style]="'background-image: url('+mediaState[currentState].clickImage+')'"></div>
+  <div class="textPanel">
+    <div class="title">POP Socket</div>
+    <div [@animeAction]="isClick ? 'click' : 'unClick'" class="count">
+      {{currentClick}}
+    </div>
+  </div>
+</div>
