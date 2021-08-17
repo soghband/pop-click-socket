@@ -31,7 +31,7 @@ $ ng build
 - Server
 1. ทำการสร้าง Source Code
 <pre>$ cd server
-$npm run build
+$ npm run build
 </pre>
 2. ทำการอัพโหลด Source Code ของฝั่ง Server ไปไว้บน Server
 3. ทำการรันคำสั่งให้ Server ทำงาน
@@ -56,7 +56,7 @@ $ node dist/main
     }
   ]
 </pre>
-###<i>** ผู้พัฒนาจะเพิ่ม State กี่ State ก็ได้</i>
+<b><i>** ผู้พัฒนาจะเพิ่ม State กี่ State ก็ได้</i></b>
 
 ให้แก้ไข mediaState ดังนี้
 <table>
@@ -102,4 +102,4 @@ $ node dist/main
   </tr>
 </table>
 
-###ผิดพลาดประการใดขออภัยด้วย
+##ผิดพลาดประการใดขออภัยด้วย
