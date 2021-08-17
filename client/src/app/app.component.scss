@@ -1,4 +1,60 @@
 .topTen {
+  padding: 10px;
   -moz-user-select:none;
   -webkit-user-select:none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  background: rgba(255,255,255,0.7);
+  border-bottom-right-radius: 5px;
+  .topTenHead {
+    border-bottom: 1px solid #FFF;
+    color: #444;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .cityRow {
+    font-size: 20px;
+    display: flex;
+    flex-grow: 2;
+    .flex1 {
+      flex: 1 1 auto;
+    }
+    .flex2 {
+      flex: 1 1 auto;
+      text-align: right;
+    }
+  }
+}
+.powered {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  display: flex;
+  .flex1 {
+    flex: 1 1 auto;
+    margin: 0 20px;
+    .bgAll {
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .bigCould {
+      width: 120px;
+      height: 50px;
+      background-image: url("/assets/big-cloud-data.svg");
+    }
+    .angular {
+      width: 50px;
+      height: 50px;
+      background-image: url("/assets/angular.svg");
+    }
+    .nestjs {
+      width: 50px;
+      height: 50px;
+      background-image: url("/assets/logo-small.svg");
+    }
+  }
 }

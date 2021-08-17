@@ -1,6 +1,33 @@
 <div class="relative">
-  <app-click-action-component></app-click-action-component>
-  <div class="topTen">
-    Top Ten Province
+  <router-outlet>
+
+  </router-outlet>
+  <div *ngIf="topTenData" class="topTen">
+    <div class="topTenHead">Top Ten City</div>
+    <div class="cityRow" *ngFor="let topTenRow of topTenData">
+      <div class="flex1">{{topTenRow.city}} {{topTenRow.country_code}}:</div>
+      <div class="flex2">{{numberWithCommas(topTenRow.score)}}</div>
+    </div>
+  </div>
+  <div class="powered">
+    <div class="flex1">
+      <a href="https://www.bigdatacloud.com/" target="_blank">
+        <div class="bigCould bgAll"></div>
+      </a>
+    </div>
+    <div class="flex1">
+      <a href="https://angular.io/" target="_blank">
+        <div class="angular bgAll">
+
+        </div>
+      </a>
+    </div>
+    <div class="flex1">
+      <a href="https://nestjs.com/" target="_blank">
+        <div class="nestjs bgAll">
+
+        </div>
+      </a>
+    </div>
   </div>
 </div>
